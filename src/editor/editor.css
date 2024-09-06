@@ -1,0 +1,36 @@
+.container {
+    width: 600px;
+    height: 400px;
+    background-color: #3498db;
+    position: relative;
+}
+
+.cuttable {
+    position: absolute;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.cut {
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+}
+
+.vertical-cut {
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    cursor: col-resize;
+}
+
+.horizontal-cut {
+    height: 2px;
+    left: 0;
+    right: 0;
+    cursor: row-resize;
+}
+
+.selected {
+    box-shadow: inset 0 0 0 4px yellow;
+}
